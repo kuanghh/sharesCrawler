@@ -12,7 +12,8 @@ def insert_shares(shares_num, shares_name):
     shares = models.Shares(shares_num,'htttp://....', shares_name, now)
     try:
 
-        shares_dao.insert_shares(shares)
+        # shares_dao.insert_shares(shares)
+        print("message")
     except Exception as e:
         print(e)
         return "failed"
